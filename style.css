@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.whole-page {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.whole-page .heading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+}
+.whole-page .heading .my-blog {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+.whole-page .heading .unknown {
+  font-size: 1.2rem;
+}
+.whole-page .heading .unknown .span-unknown {
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 3rem 5rem;
+  max-width: 120rem;
+}
+.cards {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+}
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  height: 38rem;
+  box-shadow: 1px 1px 7px 3px #757575;
+}
+.card-img {
+  height: 50%;
+  background-image: url("https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?cs=srgb&dl=pexels-pixabay-39284.jpg&fm=jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;
+}
+.card-content {
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0.5rem 1.5rem;
+}
+.card-content .title-heading {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.card-content .content-paragraph {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.card-content .description {
+  font-size: 1rem;
+}
+.card-content .description .date {
+  color: gray;
+}
+.card-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-bottom .read-more {
+  color: gray;
+  font-size: 1rem;
+  border: 1px solid gray;
+  padding: 0.8rem 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.read-more:hover {
+  color: white;
+  background-color: black;
+}
+.card-bottom .comment {
+  font-size: 1rem;
+}
+.card-bottom .zero {
+  background-color: black;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border-radius: 50%;
+}
+.right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 35%;
+  padding: 2rem;
+}
+.card-2 {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 7px 3px #757575;
+}
+.card-2 .card-2-img {
+  background-image: url("https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?cs=srgb&dl=pexels-pixabay-39284.jpg&fm=jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50%;
+}
+.card-2 .my-name {
+  padding-right: 0.7rem;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 50%;
+}
+.card-2 .card-2-content {
+  padding: 0 2rem;
+}
+.card-2 .card-2-content .my-name {
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+  height: 20%;
+}
+.card-2 .my-name .card-2-content-paragraph {
+  height: 50%;
+  font-size: 1.4rem;
+}
+.popular-posts {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  box-shadow: 1px 1px 7px 3px #757575;
+}
+.card-3-heading {
+  display: flex;
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: #fff;
+}
+.card-3-heading h3 {
+  font-weight: 300;
+}
+.popular-posts ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.popular-posts ul li a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid #ddd;
+}
+.popular-posts ul li a .post-img {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+.popular-posts ul li a .post-img img {
+  width: 100%;
+}
+.pop-posts-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.pop-posts-text .nm {
+  font-size: 1rem;
+}
+.pop-posts-text .dsc {
+  font-size: 0.8rem;
+}
+.tags {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding-top: 2rem;
+  box-shadow: 1px 1px 7px 3px #757575;
+}
+.heading-tags {
+  display: flex;
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: #fff;
+}
+.tag-links {
+  padding: 1rem;
+}
+
+.ostalo {
+  text-decoration: none;
+  color: black;
+}
+.travel {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+.portfolio {
+  position: fixed;
+  width: 100px;
+  height: 60px;
+  bottom: 80px;
+  right: 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 2px 4px 5px #999;
+  border: 1px solid black;
+}
+.portfolio:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+footer {
+  height: 30vh;
+  background-color: #757575;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and(max-width: 1403px) {
+  .section-1 h3 {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 1254px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .start-bootstrap {
+    font-size: 13px;
+  }
+  .cards .card {
+    height: 40rem;
+  }
+  .card-2-content-paragraph {
+    padding-bottom: 2rem;
+  }
+  .right-side {
+    gap: 2rem;
+    width: 65%;
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 1022px) {
+  .cards .card {
+    height: 42rem;
+  }
+  .card-2-content-paragraph {
+    padding-bottom: 2rem;
+  }
+  .card-2-content h2 {
+    font-size: 1.3rem;
+    /* margin-bottom: 1.5rem;
+    height: 20%; */
+  }
+}
+
+@media only screen and (max-width: 911px) {
+  .cards {
+    width: 80%;
+  }
+  .right-side {
+    gap: 2rem;
+    width: 80%;
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 782px) {
+  .cards {
+    width: 90%;
+  }
+  .right-side {
+    gap: 2rem;
+    width: 90%;
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .cards {
+    width: 100%;
+  }
+  .right-side {
+    gap: 2rem;
+    width: 100%;
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .whole-page {
+    padding: 0.5rem;
+  }
+  .card-content .title-heading {
+    font-size: 1.8rem;
+  }
+  .card-content .content-paragraph {
+    font-size: 0.8rem;
+  }
+  .card-content .description {
+    font-size: 0.8rem;
+  }
+  .card-bottom .read-more {
+    font-size: 0.8rem;
+    padding: 0.6rem 1rem;
+  }
+  .card-bottom .comment {
+    font-size: 0.8rem;
+  }
+  .card-bottom .zero {
+    padding: 0.5rem 0.8rem;
+  }
+  .card-content {
+    height: 50%;
+  }
+  .card-2 .card-2-content .my-name {
+    font-size: 1.5rem;
+  }
+  .card-2 .my-name {
+    height: 50%;
+    font-size: 1.2rem;
+  }
+  .card-2-content-paragraph {
+    font-size: 1rem;
+  }
+  .card-3-heading,
+  .heading-tags {
+    font-size: 1.8rem;
+  }
+  .tag-links {
+    font-size: 0.8rem;
+  }
+  .tag-links a {
+    margin: 0.4rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .whole-page .heading .my-blog {
+    font-size: 1.6rem;
+  }
+  .whole-page .heading .unknown {
+    font-size: 1rem;
+  }
+  .container {
+    padding: 1rem 0rem;
+  }
+  .cards {
+    width: 100%;
+  }
+  .cards .card {
+    height: 35rem;
+  }
+  .card-content .title-heading {
+    font-size: 1.4rem;
+  }
+  .card-2 {
+    height: 25rem;
+  }
+  .card-2 .my-name {
+    font-size: 1rem;
+  }
+  .card-2-content-paragraph {
+    margin-top: 40px;
+    font-size: 0.8rem;
+  }
+  .card-3-heading,
+  .heading-tags {
+    font-size: 1.4rem;
+  }
+  .tags {
+    padding-top: 1rem;
+  }
+  footer {
+    height: 25vh;
+  }
+}
+@media only screen and (max-width: 456px) {
+  .whole-page {
+    padding: 0rem;
+  }
+  .cards {
+    padding: 2rem 1rem;
+  }
+  .cards .card {
+    height: 41rem;
+  }
+  .right-side {
+    padding: 2rem 1rem;
+  }
+}
